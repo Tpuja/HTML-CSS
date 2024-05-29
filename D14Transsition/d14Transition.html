@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: blueviolet;
+            margin: auto;
+            /* Transition ko all property
+            all vaneko chai 
+            hieght vayo vani height tira matra ani width vayo vani width ma matra transition ko propert chalcha */
+            /* transition-property: all; */
+            transition-duration:2s ;
+            /* transition-delay: 2s; */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in;
+            transition-timing-function: ease-out;  */
+            transition-timing-function: ease-in-out;
+        }
+        .box:hover:{
+            background-color: brown;
+            height: 150px;
+            width: 150px;
+            border-radius: 100%;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+
+   </div> 
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon to Sun Transition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .icon-wrapper {
+            position: absolute;
+            display: inline-block;
+            font-size: 50px;
+            width: 1em; /* Ensure the wrapper has the same width as the icons */
+            height: 1em; /* Ensure the wrapper has the same height as the icons */
+        }
+        .fa-moon, .fa-sun {
+            position:relative;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s ease;
+        }
+        .fa-sun {
+            opacity: 0;
+        }
+        .icon-wrapper:hover .fa-moon {
+            opacity: 0;
+        }
+        .icon-wrapper:hover .fa-sun {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-wrapper">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+</body>
+</html>

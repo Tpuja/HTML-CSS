@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Transition</title>
+    <style>
+        .image-wrapper {
+            position: relative;
+            width: 300px; 
+            height: 300px; 
+        }
+        .image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease;
+        }
+        .image-wrapper img.second-image {
+            opacity: 0;
+        }
+        .image-wrapper:hover img.first-image {
+            opacity: 0;
+        }
+        .image-wrapper:hover img.second-image {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-wrapper">
+        <img src="moon.jpeg" alt="Moon" class="first-image">
+        <img src="sun.jpeg" alt="Sun" class="second-image">
+    </div>
+</body>
+</html>
